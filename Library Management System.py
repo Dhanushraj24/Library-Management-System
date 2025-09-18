@@ -105,7 +105,7 @@ def deletebook():
         if option == "Y" or option == "y":
             q = "DELETE FROM books WHERE bookno=%s"
             mycursor.execute(q, (bookno,))
-            print("Record Deleted Succcessfully")
+            print("Record Deleted Successfully")
             mydb.commit()
     else:
         print("Record Not Found")
@@ -137,7 +137,7 @@ def updatebook():
             bookprice = int(input("Enter New Book Price:"))
             bookquantity = int(input("Enter New Book Quantity"))
 
-            q = "UPDATE books SET bppkname=%s,bookauthor=%s,bookprice=%s,bookquantity=%s WHERE" 
+            q = "UPDATE books SET bookname=%s,bookauthor=%s,bookprice=%s,bookquantity=%s WHERE" 
             mycursor.execute(q, (bookno,))
             print("Record UPDATED Succcessfully")
             mydb.commit()
