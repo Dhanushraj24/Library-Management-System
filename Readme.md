@@ -13,7 +13,7 @@ Managing a library manually can be error-prone and time-consuming. Tracking book
 This Python CLI app automates library management by connecting to a MySQL database. Users can quickly perform all CRUD (Create, Read, Update, Delete) operations on book records from a terminal interface.
 
 ## Technologies Used
-- Python 3.x
+- Python 3.13.5
 - MySQL Database
 - mysql-connector-python
 
